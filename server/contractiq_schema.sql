@@ -142,6 +142,9 @@ CREATE INDEX idx_sessions_user ON user_sessions(user_id);
 CREATE INDEX idx_org_name_trgm ON organizations USING gin(name gin_trgm_ops);
 CREATE INDEX idx_users_name_trgm ON users USING gin(full_name gin_trgm_ops);
 
+
+
+
 -- =========================
 -- ENUMS (Contracts)
 -- =========================
